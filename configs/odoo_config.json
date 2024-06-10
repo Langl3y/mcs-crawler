@@ -1,0 +1,11 @@
+{
+  "user": "/html[1]/body[1]/div[1]/main[1]/div[1]/form[1]/div[1]/input[1]",
+  "password": "/html[1]/body[1]/div[1]/main[1]/div[1]/form[1]/div[2]/input[1]",
+  "login_button": "/html[1]/body[1]/div[1]/main[1]/div[1]/form[1]/div[3]/button[1]",
+  "new_product": "body.o_web_client:nth-child(2) div.o_action_manager div.o_kanban_view.o_view_controller.o_action div.o_control_panel.d-flex.flex-column.gap-3.gap-lg-1.px-3.pt-2.pb-3 div.o_control_panel_main.d-flex.flex-wrap.flex-lg-nowrap.justify-content-between.align-items-lg-start.gap-3.flex-grow-1 div.o_control_panel_breadcrumbs.d-flex.align-items-center.gap-1.order-0.h-lg-100 div.o_control_panel_main_buttons.d-flex.gap-1.d-empty-none.d-print-none div.d-none.d-xl-inline-flex.gap-1 > button.btn.btn-primary.o-kanban-button-new",
+  "product_name": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/h1[1]/div[1]/div[2]/div[1]/textarea[1]",
+  "product_price": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]",
+  "product_tax_template": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]",
+  "product_tax": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[4]/div[2]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]",
+  "new_product_loop": "body.o_web_client:nth-child(2) div.o_action_manager div.o_form_view.o_view_controller.o_action div.o_form_view_container div.o_control_panel.d-flex.flex-column.gap-3.gap-lg-1.px-3.pt-2.pb-3 div.o_control_panel_main.d-flex.flex-wrap.flex-lg-nowrap.justify-content-between.align-items-lg-start.gap-3.flex-grow-1 div.o_control_panel_breadcrumbs.d-flex.align-items-center.gap-1.order-0.h-lg-100 div.o_control_panel_main_buttons.d-flex.gap-1.d-empty-none.d-print-none div.d-none.d-xl-inline-flex.gap-1 > button.btn.btn-outline-primary.o_form_button_create"
+}
