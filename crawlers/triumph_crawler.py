@@ -90,7 +90,7 @@ def triumph_crawler(triumph_base_url):
     for triumph_link in triumph_links:
         clean_url = triumph_link[0].strip("('")
         clean_url = clean_url.rstrip("',)")
-        bike_url = f'{triumph_base_url}/{clean_url}'
+        bike_url = f'https://www.triumph-motorcycles.com.vn/{clean_url}'
         print(bike_url)
         bname, bprice = triumph_bike_crawler(bike_url)
         triumph_bikes_data.append((bname, bprice))
