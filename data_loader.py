@@ -10,10 +10,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-odoo_url = 'https://uit-acct5123-o21-cttt.odoo.com/web/login'
-product_page = 'https://uit-acct5123-o21-cttt.odoo.com/odoo/products'
-user = '19521497@gm.uit.edu.vn'
-password = 'eriri123'
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+odoo_url = os.getenv('ODOO_URL')
+product_page = os.getenv('PRODUCT_PAGE')
+user = os.getenv('USER')
+password = os.getenv('PASSWORD')
 
 with open('configs/odoo_config.json', 'r') as file:
     odoo_config = json.load(file)
