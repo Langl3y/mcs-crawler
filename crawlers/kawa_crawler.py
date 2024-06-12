@@ -1,15 +1,11 @@
-import csv
 import logging
 import random
 import time
 import json
 import re
-import os
-from datetime import datetime
-import requests
-from requests import session
-from fake_useragent import UserAgent
+
 from lxml import html
+from utils import *
 
 logger = logging.getLogger('crawl')
 
@@ -107,25 +103,6 @@ def kawa_crawler():
 
     print(kawa_bikes_data)
     return kawa_bikes_data
-
-
-def write_to_csv(data, filename='../product_template.csv'):
-    header = ["id", "name", "product_variant_ids/id", "cost_method", "list_price", "lst_price"]
-    file_exists = os.path.isfile(filename)
-
-    with open(filename, mode='a', newline='') as file:
-        writer = csv.writer(file)
-        if not file_exists:
-            writer.writerow(header)
-        for i, (name, price) in enumerate(data, start=2):
-            writer.writerow([f"__export__.product_template_{i}", name, f"__export__.product_product_{i}", "Standard Price", price, price])
-
-
-def get_html(url):
-    headers = {"User-Agent": UserAgent().random}
-    response = requests.get(url, headers=headers)
-    encoding = response.encoding if response.encoding else 'utf-8'
-    return response.content.decode(encoding, errors='ignore')
 
 
 kawa_base_url = urls['KAWA_BASE_URL']

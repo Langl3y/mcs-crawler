@@ -1,2 +1,3 @@
 product_template.csv
 *.env
+*.idea

@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, Column, Integer, Text, Numeric, DateTime, 
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import func
 
-DATABASE_URI = 'mysql+pymysql://root:root@localhost/odoo_bike_shop'
+DATABASE_URI = 'mysql+pymysql://root:root@localhost/{your_database_name}'
 
 
 # Create engine
@@ -34,6 +34,8 @@ class KawaBikeURL(Base):
     updated_at = Column(DateTime, nullable=False, server_default=func.now(), onupdate=func.now())
     is_deleted = Column(Boolean, default=False, nullable=False)
 
+
+# class {OTHER MODELS}
 
 # Create tables
 Base.metadata.create_all(engine)
